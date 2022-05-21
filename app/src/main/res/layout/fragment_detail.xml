@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.lizarragabriel.pruebaandroid.ui.detail.DetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.detail.DetailFragment">
+
+
+        <ImageView
+            android:id="@+id/mainImage"
+            loadImage="@{model.beer.image_url}"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{model.beer.name}"
+            tools:text="Buzz"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainImage"
+            app:layout_constraintTop_toTopOf="@+id/mainImage" />
+
+        <TextView
+            android:id="@+id/mYeastText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeast"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/mainImage"
+            app:layout_constraintTop_toBottomOf="@+id/mName" />
+
+        <TextView
+            android:id="@+id/mYeast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@{model.beer.ingredients.yeast}"
+            tools:text="Wyeast 1056 - American Ale™"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/mainImage"
+            app:layout_constraintTop_toBottomOf="@+id/mYeastText" />
+
+        <ImageView
+            android:id="@+id/beerIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="61dp"
+            android:src="@drawable/ic__beer_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainImage"
+            app:layout_constraintStart_toStartOf="@+id/mainImage"
+            app:layout_constraintTop_toBottomOf="@+id/mYeast" />
+
+        <TextView
+            android:id="@+id/mLitros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="20 litros"
+            android:text="@{model.beer.volume.value + ` ` + model.beer.volume.unit}"
+            app:layout_constraintBottom_toBottomOf="@+id/beerIcon"
+            app:layout_constraintStart_toEndOf="@+id/beerIcon"
+            app:layout_constraintTop_toTopOf="@+id/beerIcon" />
+
+        <TextView
+            android:id="@+id/mAvbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AVB"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            app:layout_constraintEnd_toStartOf="@id/mIbuText"
+            app:layout_constraintStart_toEndOf="@+id/mainImage"
+            app:layout_constraintTop_toBottomOf="@+id/beerIcon" />
+
+        <TextView
+            android:id="@+id/mAbv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:text="@{model.beer.abv + `%`}"
+            tools:text="4.5%"
+            app:layout_constraintEnd_toEndOf="@+id/mAvbText"
+            app:layout_constraintStart_toStartOf="@+id/mAvbText"
+            app:layout_constraintTop_toBottomOf="@+id/mAvbText" />
+
+        <TextView
+            android:id="@+id/mIbuText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:text="IBU"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            app:layout_constraintStart_toEndOf="@+id/mAvbText"
+            app:layout_constraintTop_toBottomOf="@+id/beerIcon" />
+
+        <TextView
+            android:id="@+id/mIbu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            tools:text="60"
+            android:text="@{String.valueOf(model.beer.ibu)}"
+            app:layout_constraintEnd_toEndOf="@+id/mIbuText"
+            app:layout_constraintStart_toStartOf="@+id/mIbuText"
+            app:layout_constraintTop_toBottomOf="@+id/mIbuText" />
+
+        <TextView
+            android:id="@+id/mOGText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:text="OG"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            app:layout_constraintStart_toEndOf="@+id/mIbuText"
+            app:layout_constraintTop_toBottomOf="@+id/beerIcon" />
+
+        <TextView
+            android:id="@+id/mOG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            tools:text="1010"
+            android:text="@{String.valueOf(model.beer.target_og)}"
+            app:layout_constraintEnd_toEndOf="@+id/mOGText"
+            app:layout_constraintStart_toStartOf="@+id/mOGText"
+            app:layout_constraintTop_toBottomOf="@+id/mOGText" />
+
+        <TextView
+            android:id="@+id/mFGText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:text="FG"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            app:layout_constraintStart_toEndOf="@+id/mOGText"
+            app:layout_constraintTop_toBottomOf="@+id/beerIcon" />
+
+        <TextView
+            android:id="@+id/mFG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            tools:text="1044"
+            android:text="@{String.valueOf(model.beer.target_fg)}"
+            app:layout_constraintEnd_toEndOf="@+id/mFGText"
+            app:layout_constraintStart_toStartOf="@+id/mFGText"
+            app:layout_constraintTop_toBottomOf="@+id/mFGText" />
+
+        <TextView
+            android:id="@+id/mTagLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:text="@{model.beer.tagline}"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/mainImage"
+            app:layout_constraintTop_toBottomOf="@+id/mainImage"
+            tools:text="A Real Bitter Experience." />
+
+        <TextView
+            android:id="@+id/first_brewed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`First Brewed: ` + model.beer.first_brewed}"
+
+            app:layout_constraintEnd_toEndOf="@+id/brewed_tip_text"
+            app:layout_constraintTop_toBottomOf="@+id/mTagLine"
+            tools:text="First Brewed: 09/2007" />
+
+        <TextView
+            android:id="@+id/brewed_tip_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Brewed Tips:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_brewed" />
+
+        <TextView
+            android:id="@+id/brewed_tip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{model.beer.brewers_tips}"
+            app:layout_constraintEnd_toEndOf="@+id/brewed_tip_text"
+            app:layout_constraintStart_toStartOf="@+id/brewed_tip_text"
+            app:layout_constraintTop_toBottomOf="@+id/brewed_tip_text"
+            tools:text="@string/brewed_tips" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/mHopsText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hops:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/mainImage"
+            app:layout_constraintTop_toBottomOf="@+id/brewed_tip" />
+
+
+        <TextView
+            android:id="@+id/mHops"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/mHopsText"
+            app:layout_constraintTop_toBottomOf="@+id/mHopsText"
+            app:showArray="@{0}"
+            tools:text="@string/hops" />
+
+        <TextView
+            android:id="@+id/mMaltText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Malt:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/brewed_tip"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/mHopsText" />
+
+        <TextView
+            android:id="@+id/mMalt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/mMaltText"
+            app:layout_constraintStart_toStartOf="@+id/mMaltText"
+            app:layout_constraintTop_toBottomOf="@+id/mMaltText"
+            app:showArray="@{1}"
+            tools:text="@string/malt" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">PruebaAndroid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Dialog -->
+    <string name="dialog_title">Aviso</string>
+    <string name="dialog_message">¿Desea salir de la aplicación?</string>
+
+    <string name="dialog_positive">Salir</string>
+    <string name="dialog_negative">Cancelar</string>
+
+    <string name="log_in">Iniciar sesión</string>
+    <string name="sign_up">Registrate</string>
+
+    <string name="user_addedd">Agregado con éxito</string>
+
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+
+    <string name="empty_user">El usuario está vacio</string>
+    <string name="empty_password">La contraseña está vacia</string>
+
+    <string name="alredy_exists">Ya existe</string>
+    <string name="wrong_credential">Credenciales erroneas</string>
+
+    <string name="hops">Fuggles\nFirst Gold\nFuggles\nFirst Gold\nCascade</string>
+    <string name="malt">Maris Otter Extra Pale\nCaramalt\nMunich</string>
+
+
+    <string name="food_paring">Spicy chicken tikka masala\n
+      Grilled chicken quesadilla\n
+      Caramel toffee cake</string>
+    <string name="brewed_tips">The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.</string>
+</resources>
