@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">RetrofitCall</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Dialog -->
+    <string name="fragment_login_title">Sign in</string>
+    <string name="fragment_signup_title">Sign up</string>
+    <string name="fragment_home_title">Beers</string>
+    <string name="fragment_favorite_title">Favorites</string>
+    <string name="fragment_detail_title">Detail</string>
+
+    <string name="dialog_title">Warning</string>
+    <string name="dialog_message">Do you want to exit the application?</string>
+
+    <string name="dialog_positive">Exit</string>
+    <string name="dialog_negative">Cancel</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="exit_application">Exit</string>
+
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign in</string>
+
+    <string name="user_addedd">Successfully added</string>
+
+    <string name="user">User</string>
+    <string name="password">Password</string>
+
+    <string name="empty_user">Empty user</string>
+    <string name="empty_password">Empty password</string>
+
+    <string name="alredy_exists">It already exists</string>
+    <string name="wrong_credential">Wrong credentials</string>
+
+    <string name="hops">Fuggles\nFirst Gold\nFuggles\nFirst Gold\nCascade</string>
+    <string name="malt">Maris Otter Extra Pale\nCaramalt\nMunich</string>
+
+
+    <string name="food_paring">Spicy chicken tikka masala\n
+      Grilled chicken quesadilla\n
+      Caramel toffee cake</string>
+    <string name="brewed_tips">The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.</string>
+</resources>

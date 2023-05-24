@@ -1,14 +1,23 @@
 <resources>
-    <string name="app_name">PruebaAndroid</string>
+    <string name="app_name">RetrofitCall</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Dialog -->
+    <string name="fragment_login_title">Iniciar sesión</string>
+    <string name="fragment_signup_title">Registrate</string>
+    <string name="fragment_home_title">Cervezas</string>
+    <string name="fragment_favorite_title">Favorites</string>
+    <string name="fragment_detail_title">Detalles</string>
+
     <string name="dialog_title">Aviso</string>
     <string name="dialog_message">¿Desea salir de la aplicación?</string>
 
     <string name="dialog_positive">Salir</string>
     <string name="dialog_negative">Cancelar</string>
+
+    <string name="log_out">Cerrar sesión</string>
+    <string name="exit_application">Salir</string>
 
     <string name="log_in">Iniciar sesión</string>
     <string name="sign_up">Registrate</string>

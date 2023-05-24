@@ -7,13 +7,23 @@
     <data>
         <variable
             name="model"
-            type="com.lizarragabriel.pruebaandroid.ui.signup.SignupViewModel" />
+            type="com.lizarragabriel.retrofitcall.ui.signup.SignupViewModel" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:layout_marginHorizontal="16dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.signup.SignUpFragment">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.login.LoginFragment">
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/beericon"/>
 
         <TextView
             android:id="@+id/mRegister"
@@ -23,7 +33,6 @@
             android:textStyle="bold"
             android:textSize="50sp"
             android:layout_marginTop="30dp"
-            android:layout_marginStart="16dp"
             android:layout_marginBottom="20dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -36,11 +45,7 @@
             android:hint="@string/user"
             app:endIconMode="clear_text"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="16dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mRegister">
+            android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/mUser"
@@ -58,11 +63,7 @@
             android:hint="@string/password"
             app:endIconMode="password_toggle"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-            android:layout_marginTop="5dp"
-            android:layout_marginHorizontal="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/user_layout"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:layout_marginTop="5dp" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -75,15 +76,11 @@
         <Button
             android:id="@+id/mLogIn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:onClick="@{() -> model.mSignupButton(mUser.getText().toString(), mPassword.getText().toString())}"
             android:text="@string/sign_up"
-            android:layout_marginTop="5dp"
-            android:layout_marginHorizontal="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/mPasswordLayout"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            android:layout_marginTop="5dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </layout>

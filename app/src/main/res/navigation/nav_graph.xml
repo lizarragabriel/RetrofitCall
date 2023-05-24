@@ -6,8 +6,8 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.lizarragabriel.pruebaandroid.ui.login.LoginFragment"
-        android:label="Inicio Sesión" >
+        android:name="com.lizarragabriel.retrofitcall.ui.login.LoginFragment"
+        android:label="@string/fragment_login_title" >
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment"
@@ -25,8 +25,8 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.lizarragabriel.pruebaandroid.ui.home.HomeFragment"
-        android:label="Beers" >
+        android:name="com.lizarragabriel.retrofitcall.ui.home.HomeFragment"
+        android:label="@string/fragment_home_title" >
         <action
             android:id="@+id/action_homeFragment_to_detailFragment"
             app:destination="@id/detailFragment"
@@ -44,14 +44,14 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.lizarragabriel.pruebaandroid.ui.detail.DetailFragment"
-        android:label="Detalle" />
+        android:name="com.lizarragabriel.retrofitcall.ui.detail.DetailFragment"
+        android:label="@string/fragment_detail_title" />
     <fragment
         android:id="@+id/favoriteFragment"
-        android:name="com.lizarragabriel.pruebaandroid.ui.favorite.FavoriteFragment"
-        android:label="Mis Favoritos" />
+        android:name="com.lizarragabriel.retrofitcall.ui.favorite.FavoriteFragment"
+        android:label="@string/fragment_favorite_title" />
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.lizarragabriel.pruebaandroid.ui.signup.SignUpFragment"
-        android:label="Registrate" />
+        android:name="com.lizarragabriel.retrofitcall.ui.signup.SignUpFragment"
+        android:label="@string/fragment_signup_title" />
 </navigation>

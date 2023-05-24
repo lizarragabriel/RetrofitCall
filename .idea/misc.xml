@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/layout/fragment_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/layout/fragment_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/menu/home_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launch_beer.xml" value="0.2203125" />
+        <entry key="..\:/Users/Gabri/Desktop/Android/AndroidProjects/PruebaAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launch_beer_round.xml" value="0.2203125" />
+        <entry key="..\:/Users/Gabri/Desktop/Github Android/PruebaAndroid/app/src/main/res/layout/beer_item.xml" value="0.33" />
+        <entry key="..\:/Users/Gabri/Desktop/Github Android/PruebaAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launch_beer.xml" value="0.2203125" />
         <entry key="..\:/Users/Gabri/Desktop/Projects/PruebaAndroid/app/src/main/res/drawable/ic_favorite_24.xml" value="0.2203125" />
         <entry key="..\:/Users/Gabri/Desktop/Projects/PruebaAndroid/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Gabri/Desktop/Projects/PruebaAndroid/app/src/main/res/layout/beer_item.xml" value="0.25" />

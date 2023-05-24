@@ -7,7 +7,7 @@
     <data>
         <variable
             name="model"
-            type="com.lizarragabriel.pruebaandroid.ui.favorite.FavoriteViewModel" />
+            type="com.lizarragabriel.retrofitcall.ui.favorite.FavoriteViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

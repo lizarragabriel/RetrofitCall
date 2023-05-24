@@ -7,7 +7,7 @@
     <data>
         <variable
             name="favorite"
-            type="com.lizarragabriel.pruebaandroid.data.local.room.entity.FavoriteBeer" />
+            type="com.lizarragabriel.retrofitcall.data.local.room.entity.FavoriteBeer" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

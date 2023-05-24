@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/mLogOut"
-        android:title="Cerrar sesión"
+        android:title="@string/log_out"
         app:showAsAction="never" />
     <item
         android:id="@+id/mFavorita"
